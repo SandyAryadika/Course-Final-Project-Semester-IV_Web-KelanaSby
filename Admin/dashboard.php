@@ -8,6 +8,7 @@
 <body>
     <header>
         <h1><b>Dashboard Admin</b></h1>
+        <h2>Coba Update</h2>
     </header>
 
     <main></main>
