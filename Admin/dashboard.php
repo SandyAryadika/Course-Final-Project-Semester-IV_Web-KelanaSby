@@ -3,82 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel - Wisata Surabaya</title>
-    <link rel="stylesheet" href="../Css/admin-style.css">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin-style.css">
+    <script defer src="../js/admin-script.js"></script>
 </head>
 <body>
-    <div class="sidebar">
+    <aside class="sidebar">
         <div class="sidebar-header">
-            <h2>KelanaSby</h2>
+            <h2>COMPANY</h2>
         </div>
         <ul class="sidebar-menu">
-            <li><a href="dashboard.php">Dashboard</a></li>
-            <li><a href="places.php">Wisata</a></li>
-            <li><a href="messages.php">Messages</a></li>
-            <li><a href="users.php">Users</a></li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Users</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Users</a></li>
+                    <li><a href="#">Add/Edit User</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Tour Guides</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Tour Guides</a></li>
+                    <li><a href="#">Add/Edit Tour Guide</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Tourist Attractions</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Attractions</a></li>
+                    <li><a href="#">Add/Edit Attraction</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Subscribers</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Account</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Log Out</a></li>
         </ul>
-    </div>
+    </aside>
     <div class="main-content">
         <header>
-            <div class="header-content">
-                <div class="header-user">
-                    <img src="../images/user.png" alt="User Image">
-                    <span>admin@example.com</span>
-                </div>
-                <div class="header-search">
-                    <input type="text" placeholder="Search...">
-                </div>
-            </div>
+            <button id="sidebarToggle">Toggle Sidebar</button>
+            <h1>Dashboard</h1>
+            <input type="search" placeholder="Search...">
         </header>
         <main>
-            <div class="cards">
+            <div class="info-cards">
                 <div class="card">
-                    <div class="card-content">
-                        <h3>Company Blog Posts</h3>
-                        <p>2</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Blog Comments</h3>
-                        <p>3</p>
-                    </div>
+                    <h3>Users</h3>
+                    <p>Total: 100</p>
+                    <p>New: 5</p>
                 </div>
                 <div class="card">
-                    <div class="card-content">
-                        <h3>Contact Messages</h3>
-                        <p>4</p>
-                    </div>
+                    <h3>Tour Guides</h3>
+                    <p>Total: 20</p>
+                    <p>New: 2</p>
                 </div>
                 <div class="card">
-                    <div class="card-content">
-                        <h3>Company Subscribers</h3>
-                        <p>3</p>
-                    </div>
+                    <h3>Tourist Attractions</h3>
+                    <p>Total: 50</p>
+                    <p>New: 3</p>
                 </div>
-            </div>
-            <div class="recent-comments">
-                <h3>Recent Comments</h3>
-                <div class="comment">
-                    <p><strong>Jaden</strong> Blog Title: Ushauri Lending a hand<br>Awesome post guys!!</p>
+                <div class="card">
+                    <h3>Messages</h3>
+                    <p>New: 10</p>
                 </div>
-                <div class="comment">
-                    <p><strong>Cliff</strong> Blog Title: MENTAL HEALTH IS REAL<br>I really relate to this</p>
+                <div class="card">
+                    <h3>Subscribers</h3>
+                    <p>Total: 300</p>
                 </div>
-                <a href="comments.php" class="view-all">View All Comments</a>
-            </div>
-            <div class="company-2018">
-                <h3>Company 2018</h3>
-                <div class="post">
-                    <p><strong>MENTAL HEALTH IS REAL</strong> 2018-07-27 15:28:31</p>
-                </div>
-                <div class="post">
-                    <p><strong>Ushauri Lending a hand</strong> 2018-07-27 15:50:04</p>
-                </div>
-                <a href="posts.php" class="view-all">View All Posts</a>
             </div>
         </main>
+        <footer>
+            <p>&copy; 2023 COMPANY Admin</p>
+        </footer>
     </div>
 </body>
 </html>

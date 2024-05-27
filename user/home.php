@@ -3,42 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tripshare</title>
-    <link rel="stylesheet" href="../Css/Styles.css">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">KelanaSby</div>
-            <ul>
-                <li><a href="#">Home</a></li>   
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button class="login">Login</button>
-                <button class="signup">Sign Up</button>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>COMPANY</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#">Dashboard</a></li>
+            <li>
+                <a href="#">Users</a>
+                <ul>
+                    <li><a href="#">View Users</a></li>
+                    <li><a href="#">Add/Edit User</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Tour Guides</a>
+                <ul>
+                    <li><a href="#">View Tour Guides</a></li>
+                    <li><a href="#">Add/Edit Tour Guide</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Tourist Attractions</a>
+                <ul>
+                    <li><a href="#">View Attractions</a></li>
+                    <li><a href="#">Add/Edit Attraction</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Subscribers</a></li>
+            <li>
+                <a href="#">Account</a>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+            <input type="search" placeholder="Search...">
+        </header>
+        <div class="info-cards">
+            <div class="card">
+                <h3>Users</h3>
+                <p>Total: 100</p>
+                <p>New: 5</p>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Liburan lebih baik</h1>
-                <h2>Ayo Jelajahi Surabaya.</h2>
-                <p>Temukan tempat yang menyenangkan dan lebih baik untuk mulai menjelajah Surabaya selain sekarang.
-                </p>
-                <p>Liburan lebih mudah.</p>
-                <div class="hero-buttons">
-                    <button class="get-started">Mulai</button>
-                    <button class="learn-more">or learn more</button>
-                </div>
+            <div class="card">
+                <h3>Tour Guides</h3>
+                <p>Total: 20</p>
+                <p>New: 2</p>
             </div>
-            <div class="hero-image">
-                <img src="../Assets/ImgPatungSby.jpg" alt="Berkenalan di Surabaya"style="width: 100%; height: a; max-width: 200px;">
+            <div class="card">
+                <h3>Tourist Attractions</h3>
+                <p>Total: 50</p>
+                <p>New: 3</p>
             </div>
-        </section>
-    </main>
+            <div class="card">
+                <h3>Messages</h3>
+                <p>New: 10</p>
+            </div>
+            <div class="card">
+                <h3>Subscribers</h3>
+                <p>Total: 300</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
