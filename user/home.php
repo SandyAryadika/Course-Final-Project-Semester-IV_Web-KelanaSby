@@ -94,7 +94,15 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="card">
+                <h3>Messages</h3>
+                <p>New: 10</p>
+            </div>
+            <div class="card">
+                <h3>Subscribers</h3>
+                <p>Total: 300</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
