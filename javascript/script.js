@@ -1,32 +1,43 @@
-const carouselContainer = document.querySelector('.carousel-container');
-const carousels = document.querySelectorAll('.carousel');
-let currentIndex = 0;
-let isSliding = false;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function slide(direction) {
-  if (isSliding) return;
-  isSliding = true;
-
-  const slideWidth = carousels[0].offsetWidth;
-  const maxIndex = carousels.length - 1;
-
-  if (direction === 'next') {
-    currentIndex = (currentIndex + 1) % carousels.length;
-  } else {
-    currentIndex = (currentIndex - 1 + carousels.length) % carousels.length;
-  }
-
-  carouselContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-
-  setTimeout(() => {
-    isSliding = false;
-  }, 300);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-// Add event listeners for arrow buttons or touch events if needed
-// Example:
-// const prevButton = document.querySelector('.prev-button');
-// const nextButton = document.querySelector('.next-button');
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-// prevButton.addEventListener('click', () => slide('prev'));
-// nextButton.addEventListener('click', () => slide('next'));
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+// Automatic slideshow (optional)
+let slideInterval = setInterval(function() {
+    plusSlides(1);
+}, 5000); // Change image every 5 seconds
+
+// Pause slideshow on hover (optional)
+const slideshowContainer = document.querySelector('.slideshow-container');
+slideshowContainer.addEventListener('mouseenter', () => {
+    clearInterval(slideInterval);
+});
+
+slideshowContainer.addEventListener('mouseleave', () => {
+    slideInterval = setInterval(function() {
+        plusSlides(1);
+    }, 5000);
+});

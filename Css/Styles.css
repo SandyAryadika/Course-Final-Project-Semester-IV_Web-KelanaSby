@@ -172,7 +172,7 @@ nav ul li a {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover .card-content {
@@ -216,7 +216,7 @@ nav ul li a {
     background-color: var(--fourthcolor);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
     transition: transform 0.3s ease-in-out;
   }
@@ -256,30 +256,113 @@ nav ul li a {
   }
 
   /* Carousel */
-  #gallery-carousel {
-    width: 100%;
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 90%; /* Reduce the width to 90% of the container to avoid overfilling the screen */
+    margin: auto;
     overflow: hidden;
+    aspect-ratio: 21 / 9; /* Ensures the aspect ratio is 21:9 */
+    border-radius: 25px;
 }
 
-.carousel-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    margin-bottom: 20px;
-    flex-direction: row;
-    justify-content: center;
-    white-space: nowrap; /* Menghindari wrapping */
+.mySlides {
+    display: none;
 }
 
-.carousel {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    margin-right: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 300px;
-    display: inline-block; /* Menjadikan kartu sebagai inline block */
-    vertical-align: top; /* Menjadikan kartu sejajar ke atas */
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: center; /* Centers the image within the container */
+}
+
+.text {
+    color: var(--fourthcolor);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.numbertext {
+    color: var(--fourthcolor);
+    font-size: 12px;
+    padding: 22px 22px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+@media only screen and (max-width: 768px) {
+    .text { font-size: 11px; }
+    .prev, .next { font-size: 14px; padding: 10px; }
 }
