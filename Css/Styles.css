@@ -1,8 +1,27 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #CAF4FF;
-    color: #4a4a4a;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+:root{
+    --maincolor: #79AC78;
+    --secondcolor: #EEEEEE;
+    --thridcolor: #252525;
+    --fourthcolor: #FFFFFF;
+}
+
+body {
+    background-color: var(--fourthcolor);
+    color: var(--thridcolor);
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -18,15 +37,15 @@ nav {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 35px;
     font-weight: bold;
-    color: #5AB2FF;
+    color: var(--maincolor);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1em;
+    gap: 4em;
 }
 
 nav ul li a {
@@ -42,7 +61,7 @@ nav ul li a {
 
 .auth-buttons .login,
 .auth-buttons .signup {
-    background-color: #5AB2FF;
+    background-color: var(--maincolor);
     color: #fff;
     border: none;
     padding: 0.5em 1em;
@@ -52,41 +71,45 @@ nav ul li a {
 }
 
 .auth-buttons .signup {
-    background-color: #4a4a4a;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    text-align: center;
+    color: var(--thridcolor);
+    background-color: transparent;
+    border: 2px solid var(--maincolor);
 }
 
 .hero {
     display: flex;
     align-items: center;
-    gap: 2em;
+    text-align: center;
+    margin: 25px 25px 25px 25px;
+    width: auto;
+    height: 520px;
+    background-image: url('../Assets/surabuaya.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
 }
 
 .hero-text {
-    max-width: 500px;
+    max-width: 100vh;
+    margin: 30px auto 30px;
+    gap: 100px;
 }
 
 .hero-text h1 {
-    font-size: 2em;
-    color: #5AB2FF;
+    font-size: 60px;
+    color: var(--maincolor);
 }
 
 .hero-text h2 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #4a4a4a;
+    color: var(--secondcolor);
 }
 
 .hero-text p {
     font-size: 1em;
     margin: 1em 0;
+    color: var(--secondcolor);
 }
 
 .hero-buttons {
@@ -95,23 +118,168 @@ main {
 
 .hero-buttons .get-started,
 .hero-buttons .learn-more {
-    background-color: #5AB2FF;
-    color: #fff;
+    background-color: var(--maincolor);
+    color: var(--secondcolor);
     border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
+    padding: 0.5em 1.5em;
+    cursor: pointer;    
     font-size: 1em;
     border-radius: 5px;
-    margin-right: 1em;
+    margin-left: 1em;
+    margin-right: 0em;
 }
 
 .hero-buttons .learn-more {
     background-color: transparent;
-    color: #5AB2FF;
-    border: 2px solid #5AB2FF;
+    color: var(--secondcolor);
+    border: 2px solid var(--maincolor);
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
+/* Container */
+.container{
+    display: flex;
+}
+
+.grid-2 span {
+    font-size: 64px;
+    font-weight: 800; 
+    margin-left: 45px;
+    color: var(--maincolor);
+}
+
+.grid-2 h4 {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--thridcolor);
+}
+
+.container-content p {
+    font-weight: 400;
+    padding-right: 600px;
+    margin-left: 45px;
+    color: var(--thridcolor);
+    line-height: 1.8em;
+}
+
+/* card */
+#gallery{
+    background-color: var(--secondcolor);
+    margin: 25px 25px 25px 25px;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-content {
+    background-color: var(--fourthcolor);
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content p,
+.card:hover .btn {
+    color: var(--thridcolor);
+}
+
+.card:hover .card-content .btn{
+    color: var(--fourthcolor);
+}
+
+.card-header h2{
+    padding: 35px 90px;
+    font-size: 42px;
+    color: var(--maincolor);
+}
+
+.highlight{
+    display: block;
+    padding-top: 20px;
+    font-weight: 100;
+    font-size: 18px;
+    color: var(--thridcolor);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 325px;
+    background-color: var(--fourthcolor);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+    gap: 20px;
+  }
+  
+  .card-content h4 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .card-content p {
+    color: var(--thridcolor);
+    font-size: 15px;
+    line-height: 1.3;
+    flex-grow: 10;
+  }
+  
+  .card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--maincolor);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: var(--fourthcolor);
+    align-self: flex-end;
+  }
+
+  /* Carousel */
+  #gallery-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap; /* Menghindari wrapping */
+}
+
+.carousel {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    display: inline-block; /* Menjadikan kartu sebagai inline block */
+    vertical-align: top; /* Menjadikan kartu sejajar ke atas */
 }
