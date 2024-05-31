@@ -116,6 +116,16 @@ nav ul li a {
     margin-top: 1em;
 }
 
+.hero-buttons .get-started a{
+    text-decoration: none;
+    color: var(--fourthcolor);
+}
+
+.hero-buttons .learn-more a{
+    text-decoration: none;
+    color: var(--fourthcolor);
+}
+
 .hero-buttons .get-started,
 .hero-buttons .learn-more {
     background-color: var(--maincolor);
@@ -196,6 +206,7 @@ nav ul li a {
 }
 
 .highlight{
+    font-weight: 500;
     display: block;
     padding-top: 20px;
     font-weight: 100;
@@ -256,14 +267,17 @@ nav ul li a {
   }
 
   /* Carousel */
-  * {
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.slideshow-header h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 28px;
+    margin: 25px 400px;
+    color: var(--maincolor);
+    background-color: var(--secondcolor);
 }
 
 .slideshow-container {
@@ -365,4 +379,183 @@ img {
 @media only screen and (max-width: 768px) {
     .text { font-size: 11px; }
     .prev, .next { font-size: 14px; padding: 10px; }
+}
+
+.history-surabaya h2{
+    padding: 35px 90px;
+    font-size: 42px;
+    color: var(--maincolor);
+}
+
+/* Tour Guide */
+#tourguide {
+    padding: 20px;
+}
+
+.tourguide-header h2{
+    text-align: left;
+    padding: 35px 90px;
+    font-size: 42px;
+    color: var(--maincolor);
+}
+
+.tourguide-surabaya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fourthcolor); 
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.12); 
+    border-radius: 25px;
+    margin: 5px;
+    margin-bottom: 35px;
+    
+}
+
+.card-photo {
+    margin-left: 20px; /* Tambahkan margin kiri */
+}
+
+.card-photo img {
+    border-radius: 15px;
+    margin: 90px;
+    max-width: 400px; /* Atur lebar maksimum gambar */
+    width: 100%; /* Gambar akan mengisi 100% dari elemen induknya */
+    height: auto;
+}
+
+.card-keterangan {
+    text-align: left;
+    margin: 70px;
+}
+
+.card-keterangan h3 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.card-keterangan p {
+    margin: 5px 0;
+}
+
+.card-ratings {
+    margin-top: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--maincolor); 
+    color: var(--fourthcolor);
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; 
+}
+
+@media only screen and (min-width: 768px) {
+    .tourguide-surabaya {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .card-photo {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        margin-left: 20px; /* Tambahkan margin kiri */
+    }
+
+    .card-photo img {
+        max-width: 200px; /* Atur lebar maksimum gambar */
+        height: auto;
+    }
+
+    .card-keterangan {
+        flex: 1;
+    }
+}
+
+/* Contact Us */
+.contact{
+    min-height: 100vh;
+    background-color: var(--secondText-color);
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.contact-form{
+    text-align: left;
+}
+
+.contact-form h4{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--mainText-color);
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--maincolor);
+    color: var(--fourthcolor);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: var(--maincolor);
+}
+
+.contact-info{
+    text-align: left;
+}
+
+.contact-info h4{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--maincolor);
+}
+
+.contact-info p{
+    margin-bottom: 10px;
+    color: var(--maincolor);
+}
+
+.contact-info img{
+    margin-right: 10px;
 }
