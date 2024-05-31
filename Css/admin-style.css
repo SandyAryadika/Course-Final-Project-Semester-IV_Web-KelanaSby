@@ -1,7 +1,14 @@
+/* CSS sebelumnya */
 body {
     display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+h1.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar {
@@ -120,52 +127,85 @@ footer {
     border-top: 1px solid #bdc3c7;
 }
 
-/* Styles for the User Management page */
-.add-new-btn {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#search-input {
-    padding: 10px;
-    margin: 10px 0;
-}
-
+/* CSS tambahan untuk tabel */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    border: 1px solid #bdc3c7;
-    padding: 10px;
+    margin: 20px 0;
+    font-size: 16px;
     text-align: left;
 }
 
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
 th {
-    background-color: #34495e;
+    background-color: #2c3e50;
     color: white;
 }
 
-.edit-btn {
-    background-color: #f39c12;
-    color: white;
-    padding: 5px 10px;
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 0 4px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #1abc9c;
+    color: white;
+    padding: 7px 10px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .delete-btn {
     background-color: #e74c3c;
     color: white;
-    padding: 5px 10px;
+    padding: 7px 10px;
+    margin: 0 4px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.add-btn{
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+/* User.php */
+/* Tambahkan ke dalam file admin-style.css */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }

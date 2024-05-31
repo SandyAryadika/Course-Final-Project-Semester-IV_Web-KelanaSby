@@ -22,7 +22,7 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Tour Guides</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">View Tour Guides</a></li>
+                      <li><a href="#">View Tour Guides</a></li>
                     <li><a href="#">Add/Edit Tour Guide</a></li>
                 </ul>
             </li>
