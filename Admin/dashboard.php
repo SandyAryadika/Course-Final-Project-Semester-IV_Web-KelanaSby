@@ -1,9 +1,10 @@
+<?php include("connectDB.php")?>
 <?php include("adminHeader.php")?>
             <div class="info-cards">
+                <?php include("countUser.php")?>
                 <div class="card">
                     <h3>Users</h3>
-                    <p>Total: 100</p>
-                    <p>New: 5</p>
+                    <p>Total: <?= $total_users ?></p>
                 </div>
                 <div class="card">
                     <h3>Tour Guides</h3>
