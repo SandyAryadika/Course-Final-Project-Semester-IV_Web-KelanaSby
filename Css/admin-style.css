@@ -91,13 +91,19 @@ h1.title{
     transition: margin-left 0.3s ease;
 }
 
+.main-content header h1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
 .content-expanded {
     margin-left: 0;
 }
 
+/* ini yang ubah justify content nya dihapus */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 

@@ -48,6 +48,5 @@
         <header>
             <button id="sidebarToggle">Toggle Sidebar</button>
             <h1>Dashboard</h1>
-            <input type="search" placeholder="Search...">
         </header>
         <main>
