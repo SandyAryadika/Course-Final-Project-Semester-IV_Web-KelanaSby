@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugu Pahlawan</title>
-    <link rel="stylesheet" href="../css/tuguPahlawan-style.css">
+    <link rel="stylesheet" href="../css/houseOfSampoerna-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -41,13 +41,13 @@
             <div class="container">
                 <div class="container-content">
                     <div class="grid-3">
-                        <h4><span>Tugu Pahlawan</span>&nbsp;&nbsp;&nbsp;&nbsp; Surabaya, Jawa Timur</h4><br> 
+                        <h4><span>House of Sampoerna</span>&nbsp;&nbsp;&nbsp;&nbsp; Surabaya, Jawa Timur</h4><br> 
                     </div>
-                    <p>Sebuah monumen yang menjadi markah tanah Kota Surabaya. Tinggi monumen ini adalah 41,15 meter dan berbentuk lingga atau paku terbalik. Tubuh monumen berbentuk lengkungan-lengkungan (canalures) sebanyak 10 lengkungan, dan terbagi atas 11 ruas. Tinggi, ruas dan canalures mengandung makna tanggal 10, bulan 11, tahun 1945. Suatu tanggal bersejarah, bukan hanya bagi penduduk Kota Surabaya, tetapi juga bagi seluruh Rakyat Indonesia. Tugu Pahlawan dibangun untuk memperingati peristiwa Pertempuran 10 November 1945 di Surabaya, di mana arek-arek Suroboyo berjuang melawan pasukan Sekutu bersama Belanda yang hendak menjajah kembali Indonesia. Monumen Tugu Pahlawan menjadi pusat perhatian setiap tanggal 10 November mengenang peristiwa pada tahun 1945 ketika banyak pahlawan yang gugur dalam perang kemerdekaan. </p>
+                    <p>House of Sampoerna merupakan museum tembakau yang didirikan pada tahun 1913 oleh Liem Seeng Tee, seorang imigran Tiongkok di Surabaya. Museum ini awalnya merupakan pabrik rokok kecil yang kemudian berkembang menjadi salah satu produsen rokok terbesar di Indonesia, Sampoerna. Pada tahun 2003, pabrik rokok ini diubah menjadi museum untuk memperingati sejarah perusahaan dan industri tembakau di Indonesia.</p>
 
                     <div class="grid-3">
                         <h5>Lokasi</h5>
-                        <p>Monumen ini berada di tengah-tengah kota di Jalan Pahlawan Surabaya, dan di dekat Kantor Gubernur Jawa Timur. Tugu Pahlawan merupakan salah satu ikon Kota Surabaya sebagai Kota Pahlawan. Berdiri di atas tanah lapang seluas 1,3 hektare, dan secara administratif berada di wilayah Kelurahan Alun-Alun Contong, Kecamatan Bubutan, Kota Surabaya</p>
+                        <p>House of Sampoerna terletak di Jalan Taman Sampoerna No. 6, Surabaya, Jawa Timur. Lokasinya strategis dan mudah diakses oleh berbagai moda transportasi.</p>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     <div class="grid-3">
                         <h4><span>Gallery</span>&nbsp;&nbsp;&nbsp;&nbsp; Monumen Tugu Pahlawan</h4><br> 
                     </div>
-                    <p>Koleksi foto Tugu Pahlawan dari berbagai sudut dan momen bersejarah dapat dilihat di sini. Foto-foto ini menampilkan keindahan arsitektur monumen, serta berbagai acara penting yang diadakan di sana.</p>
+                    <p>Nikmati koleksi foto House of Sampoerna dari berbagai sudut dan momen bersejarah. Lihat keindahan arsitektur dan kekayaan budaya</p>
                 </div>
             </div>
             <section id="card">
