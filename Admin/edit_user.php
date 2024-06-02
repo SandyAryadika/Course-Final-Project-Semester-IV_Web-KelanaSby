@@ -24,9 +24,12 @@ if (isset($_POST['edit_user'])) {
     $email = $_POST['email'];
     $phone = $_POST['phone'];
 
+    // Hash the password before storing
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
     $sql = "UPDATE user SET usernameUser = ?, passwordUser = ?, namaUser = ?, emailUser = ?, noUser = ? WHERE idUser = ?";
     $stmt = mysqli_prepare($koneksi, $sql);
-    mysqli_stmt_bind_param($stmt, 'ssssss', $username, $password, $name, $email, $phone, $id);
+    mysqli_stmt_bind_param($stmt, 'ssssss', $username, $hashedPassword, $name, $email, $phone, $id);
     mysqli_stmt_execute($stmt);
 
     // Redirect to the user list page
