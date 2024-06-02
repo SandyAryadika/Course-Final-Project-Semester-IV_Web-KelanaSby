@@ -83,7 +83,7 @@ nav ul li a {
     margin: 25px 25px 25px 25px;
     width: auto;
     height: 720px;
-    background-image: url('../Assets/Tugu Pahlawan BW.jpg');
+    background-image: url("../Assets/House of Sampoerna BW.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 20px;
