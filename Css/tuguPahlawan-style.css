@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+:root{
+    --maincolor: #79AC78;
+    --secondcolor: #EEEEEE;
+    --thridcolor: #252525;
+    --fourthcolor: #FFFFFF;
+}
+
+body {
+    background-color: var(--fourthcolor);
+    color: var(--thridcolor);
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--maincolor);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1em;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.auth-buttons .logout {
+    background-color: var(--maincolor);
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
