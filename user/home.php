@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,11 +17,11 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#tourguide">Tour Guide</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="auth-buttons">
-                <button class="login">Login</button>
-                <button class="signup">Sign Up</button>
+            <button class="login" onclick="window.location.href='../user/loginRegist.php'">Login</button>
+            <button class="signup"onclick="window.location.href='../user/loginRegist.php'">Sign Up</button>
             </div>
         </nav>
     </header>
@@ -36,7 +35,6 @@
                 <p>Liburan lebih mudah.</p>
                 <div class="hero-buttons">
                     <button class="get-started"><a href="#aboutus">Mulai</a></button>
-                    <button class="learn-more"><a href="">Pelajari Lebih Lanjut</a></button>
                 </div>
             </div>
         </section>
@@ -64,7 +62,7 @@
                         <div class="card-content">
                             <h4>Tugu Pahlawan</h4>
                             <p>Tugu Pahlawan di Surabaya adalah monumen ikonik yang didirikan untuk memperingati Pertempuran 10 November 1945, salah satu pertempuran paling bersejarah di Indonesia.</p>
-                            <a href="" class="btn">Read More</a>
+                            <a href="../user/tuguPahlawan.php" class="btn">Read More</a>
                         </div>
                     </div>
                     <div class="card">
@@ -210,10 +208,11 @@
             </div>
         </section>
 
-        <article id="contactus">
+        <section id="contact">
             <div class="contact">
                 <div class="contact-section">
-                    <h3>Contact Us</h3>
+                    <h3>Contact Us
+                    <span class="highlight">03 &nbsp;/&nbsp; Jalan Pintas ke Jawaban, Hubungi Sekarang!</span></h3>
                     <div class="contact-wrapper">
                         <div class="contact-form">
                             <h4>Send us a message</h4>
@@ -222,7 +221,7 @@
                                     <input type="text" name="name" placeholder="Yuor Name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="name" placeholder="Yuor Name">
+                                    <input type="email" name="name" placeholder="Yuor Email">
                                 </div>
                                 <div class="form-group">
                                     <textarea name="message" placeholder="Your Message"></textarea>
@@ -232,15 +231,20 @@
                         </div>
                         <div class="contact-info">
                             <h4>Contact Information</h4>
-                            <p><img src="../Assets/call.svg">+623587248971</p>
-                            <p><img src="../Admin/mail.svg">punyakelompok11@outlook.com</p>
+                            <p><img src="../Assets/call.svg">+622635678233</p>
+                            <p><img src="../Assets/mail.svg">punyakelompok11@outlook.com</p>
                             <p><img src="../Assets/location.svg">UPN Veteran Jawa Timur</p>
                         </div>
                     </div>
                 </div>
             </div>
-            </article>
+        </section>
 
+        <section id="foot">
+            <div class="footer">
+                <p>Pemrograman Web A081 - Kelompok 11</p>
+            </div>
+        </section>
     </main>
     <script src="../js/home-script.js"></script>
 </body>
