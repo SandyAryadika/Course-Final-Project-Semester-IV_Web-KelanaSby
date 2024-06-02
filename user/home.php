@@ -70,7 +70,7 @@
                         <div class="card-content">
                             <h4>House of Sampoerna</h4>
                             <p>Museum yang terletak di kompleks pabrik rokok Sampoerna. Tempat ini menampilkan sejarah industri rokok di Indonesia serta koleksi pribadi keluarga Sampoerna.</p>
-                            <a href="" class="btn">Read More</a>
+                            <a href="../user/houseOfSampoerna.php" class="btn">Read More</a>
                         </div>
                     </div>
                     <div class="card">
@@ -239,13 +239,15 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <section id="foot">
+    <footer>
+    <section id="foot">
             <div class="footer">
                 <p>Pemrograman Web A081 - Kelompok 11</p>
             </div>
         </section>
-    </main>
+    </footer>
     <script src="../js/home-script.js"></script>
 </body>
 </html>

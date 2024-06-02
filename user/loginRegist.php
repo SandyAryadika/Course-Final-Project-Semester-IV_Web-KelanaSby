@@ -15,9 +15,11 @@
     		<form action="#">
     			<h1>Create Account</h1>
     			<span>Gunakan email Kamu untuk daftar</span>
+				<input type="username" placeholder="Username" />
     			<input type="text" placeholder="Name" />
     			<input type="email" placeholder="Email" />
     			<input type="password" placeholder="Password" />
+				<input type="phone" placeholder="Phone" />
     			<button>Sign Up</button>
     		</form>
     	</div>
