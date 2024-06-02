@@ -42,6 +42,7 @@ if (isset($_POST['delete_user'])) {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Role</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -50,10 +51,11 @@ if (isset($_POST['delete_user'])) {
                 <tr>
                     <td><?= $user["idUser"]?></td>
                     <td><?= $user["usernameUser"]?></td>
-                    <td><?= $user["passwordUser"]?></td>
+                    <td><?= substr($user["passwordUser"], 0, 10) . '...' ?></td>
                     <td><?= $user["namaUser"]?></td>
                     <td><?= $user["emailUser"]?></td>
                     <td><?= $user["noUser"]?></td>
+                    <td><?= $user["role"]?></td>
                     <td>
                         <a class="edit-btn" href="edit_user.php?id=<?= $user["idUser"] ?>">Edit</a>
                         <form method="POST" action="" style="display:inline-block;">
