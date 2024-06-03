@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+:root{
+    --maincolor: #79AC78;
+    --secondcolor: #EEEEEE;
+    --thridcolor: #252525;
+    --fourthcolor: #FFFFFF;
+}
+
+body {
+    background-color: var(--fourthcolor);
+    color: var(--thridcolor);
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--maincolor);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1em;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+    background-color: var(--maincolor);
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.auth-buttons .signup {
+    color: var(--thridcolor);
+    background-color: transparent;
+    border: 2px solid var(--maincolor);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 25px 25px 25px 25px;
+    width: auto;
+    height: 720px;
+    background-image: url("../Assets/Kapal Selam BW.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.hero-text {
+    max-width: 100vh;
+    margin: 30px auto 30px;
+    gap: 100px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    color: var(--maincolor);
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--secondcolor);
+}
+
+.hero-text p {
+    font-size: 1em;
+    margin: 1em 0;
+    color: var(--secondcolor);
+}
+
+.hero-buttons {
+    margin-top: 1em;
+}
+
+.hero-buttons .get-started a{
+    text-decoration: none;
+    color: var(--fourthcolor);
+}
+
+.hero-buttons .learn-more a{
+    text-decoration: none;
+    color: var(--fourthcolor);
+}
+
+.hero-buttons .get-started,
+.hero-buttons .learn-more {
+    background-color: var(--maincolor);
+    color: var(--secondcolor);
+    border: none;
+    padding: 0.5em 1.5em;
+    cursor: pointer;    
+    font-size: 1em;
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-right: 0em;
+}
+
+.hero-buttons .learn-more {
+    background-color: transparent;
+    color: var(--secondcolor);
+    border: 2px solid var(--maincolor);
+}
+
+/* Container */
+.container{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.grid-2 span {
+    font-size: 64px;
+    font-weight: 800; 
+    margin-left: 45px;
+    color: var(--maincolor);
+}
+
+.grid-2 h4 {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--thridcolor);
+}
+
+.container-content p {
+    font-weight: 400;
+    padding-right: 600px;
+    margin-left: 45px;
+    color: var(--thridcolor);
+    line-height: 1.8em;
+}
+
+.grid-3 span {
+    font-size: 64px;
+    font-weight: 800; 
+    margin-left: 45px;
+    color: var(--maincolor);
+}
+
+.grid-3 h5{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 32px;
+    font-weight: 800; 
+    margin-left: 45px;
+    color: var(--maincolor);
+}
+
+.gallery-content p {
+    font-weight: 400;
+    padding-right: 600px;
+    margin-left: 45px;
+    color: var(--thridcolor);
+    line-height: 1.8em;
+}
+
+/* gallery atau card */
+#card{
+    background-color: var(--thridcolor);
+    margin: 25px 25px 25px 25px;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.4);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 325px;
+    background-color: var(--secondcolor);
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.4);
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  /* Fasilitas */
+  .grid-4 span {
+    font-size: 64px;
+    font-weight: 800; 
+    margin-left: 45px;
+    color: var(--maincolor);
+}
+
+.grid-4 h4 {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--thridcolor);
+}
+
+.fasilitas-content p {
+    font-weight: 400;
+    padding-right: 600px;
+    margin-left: 45px;
+    color: var(--thridcolor);
+    line-height: 1.8em;
+}
+
+.footer{
+    margin-top: 50px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fourthcolor);
+    background-color: var(--thridcolor);
+    padding: 25px;
+}

@@ -43,11 +43,16 @@
                     <div class="grid-3">
                         <h4><span>House of Sampoerna</span>&nbsp;&nbsp;&nbsp;&nbsp; Surabaya, Jawa Timur</h4><br> 
                     </div>
-                    <p>House of Sampoerna merupakan museum tembakau yang didirikan pada tahun 1913 oleh Liem Seeng Tee, seorang imigran Tiongkok di Surabaya. Museum ini awalnya merupakan pabrik rokok kecil yang kemudian berkembang menjadi salah satu produsen rokok terbesar di Indonesia, Sampoerna. Pada tahun 2003, pabrik rokok ini diubah menjadi museum untuk memperingati sejarah perusahaan dan industri tembakau di Indonesia.</p>
-
+                    <p>House of Sampoerna, sebelumnya dikenal sebagai sebuah panti asuhan yang didirikan oleh Kolonial Belanda di Kota Surabaya. Namun, pada tahun 1932, bangunan ini berpindah kepemilikan kepada Liem Seeng Tee, yang kemudian mengubahnya menjadi pabrik rokok.
+                        Pabrik rokok ini akhirnya menjadi salah satu produsen rokok terbesar di Indonesia, Sampoerna. Pada tahun 2003, bangunan ini diubah menjadi sebuah museum untuk memperingati sejarah perusahaan dan industri tembakau di Indonesia.
+                        Kini, House of Sampoerna telah menjadi salah satu destinasi wisata favorit di Surabaya. Bangunannya yang ikonik menarik banyak pengunjung, dan museum ini memiliki banyak koleksi menarik yang memberikan wawasan mendalam tentang sejarah tembakau dan industri rokok di Indonesia.
+                        Selain koleksi yang menarik, museum ini juga menawarkan spot-spot foto yang instagenic, menjadikannya tempat yang cocok untuk berbagi momen indah bersama teman dan keluarga, dan tentu saja untuk mengeksplorasi sejarah dan budaya Indonesia.</p>
                     <div class="grid-3">
                         <h5>Lokasi</h5>
-                        <p>House of Sampoerna terletak di Jalan Taman Sampoerna No. 6, Surabaya, Jawa Timur. Lokasinya strategis dan mudah diakses oleh berbagai moda transportasi.</p>
+                        <p>Museum Sampoerna ini terletak di alamat Jalan Sampoerna, Desa Krembengan Utara, Kecamatan Pabean Cantian, Kota Surabaya, Provinsi Jawa Timur.
+                            Lokasi ini ada di tengah kota sehingga mudah untuk dijangkau dengan kendaraan pribadi ataupun kendaraan umum. Akses jalannya juga sudah sangat bagus.
+                            Bangunan museum ini tidak di pinggir jalan raya, melainkan masuk gang sebelah Jembatan Merah Plaza. Gang ini dapat dilewati mobil dan sepeda motor.
+                            Jadi jika membawa mobil, tetap dapat masuk ke gang ini sehingga tidak perlu berjalan untuk tiba di lokasi museum. Hanya saja tetap harus berhati-hati terutama saat berpapasan dengan kendaraan lain.</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +64,7 @@
             <div class="gallery">
                 <div class="gallery-content">
                     <div class="grid-3">
-                        <h4><span>Gallery</span>&nbsp;&nbsp;&nbsp;&nbsp; Monumen Tugu Pahlawan</h4><br> 
+                        <h4><span>Gallery</span>&nbsp;&nbsp;&nbsp;&nbsp; House of Sampoerna</h4><br> 
                     </div>
                     <p>Nikmati koleksi foto House of Sampoerna dari berbagai sudut dan momen bersejarah. Lihat keindahan arsitektur dan kekayaan budaya</p>
                 </div>
@@ -68,13 +73,13 @@
             <div class="card-header">
                 <div class="card-container">
                     <div class="card">
-                        <img src="../Assets/Gallery_Tugu Pahlawan.jpg">
+                        <img src="../Assets/Gallery_House of Sampoerna.jpg">
                     </div>
                     <div class="card">
-                        <img src="../Assets/Gallery_Tugu Pahlawan 2.jpg">
+                        <img src="../Assets/Gallery_House of Sampoerna 2.jpg">
                     </div>
                     <div class="card">
-                        <img src="../Assets/Gallery_Tugu Pahlawan 3.jpg">
+                        <img src="../Assets/Gallery_House of Sampoerna 3.jpg">
                     </div>
                 </div>
             </div>
@@ -84,18 +89,27 @@
         <div class="fasilitas">
                 <div class="fasilitas-content">
                     <div class="grid-3">
-                        <h4><span>Fasilitas</span>&nbsp;&nbsp;&nbsp;&nbsp; Monumen Tugu Pahlawan</h4><br> 
+                        <h4><span>Fasilitas</span>&nbsp;&nbsp;&nbsp;&nbsp; House of Sampoerna</h4><br> 
                     </div>
-                    <p>Tugu Pahlawan di Surabaya memiliki sejumlah fasilitas yang cukup memadai, mulai dari area parkir yang luas, mushola bagi Anda yang ingin beribadah dan juga kamar mandi. Bagi Anda yang tidak membawa perbekalan sendiri, di sini juga terdapat sejumlah rumah makan yang berada di sekitar Tugu Pahlawan yang dapat Anda kunjungi. Tugu pahlawan juga memiliki taman yang luas, hijau dan asri. Di sini terdapat trotoar berkanopi yang mengelilingi area alun-alun tugu dan juga dilengkapi dengan tempat duduk yang dapat dijadikan tempat beristirahat apabila lelah setelah mengelilingi tugu.</p>
-
+                    <p>Museum ini mempunyai fasilitas-fasilitas yang tergolong lengkap. Anda akan menjumpai fasilitas tempat parkir yang luas dan terlihat rapi. Fasilitas lainnya adalah pusat informasi.
+                        Di bagian dalam museum, terdapat fasilitas gallery koleksi dan juga biografi sejarah. Selain itu, ada juga pusat produksi rokok.
+                        Fasilitas yang tak boleh ketinggalan untuk kami sebutkan adalah spot-spot foto yang ada di dalam museum. Dua fasilitas yang terakhir adalah pusat souvenir dan cafe.
+                        Untuk fasilitas cafe ini bisa menjadi alternatif jika Anda tidak menemukan tempat wisata kuliner Surabaya terdekat untuk santap siang.</p>
                     <div class="grid-3">
                         <h5>Jam Buka</h5>
-                        <p>Tugu Pahlawan buka setiap hari, pada hari senin-jum’at buka mulai pukul 08.00-16.00 WIB sedangkan pada hari sabtu-minggu buka mulai pukul 07.00-15.00 WIB. Untuk hari lahir pancasila jam buka tugu disesuaikan.</p>
+                        <p>Museum ini buka dari Senin sampai Minggu dari jam 09.00 sampai jam 18.00 WIB.
+                        Jika ingin nyaman dan santai, disarankan untuk datang di pagi hari karena pengunjung relatif sepi. Namun, untuk saat ini museum masih tutup untuk sementara waktu hingga beberapa waktu kedepan.
+                        Untuk itu, bisa manfaatkan kesempatan ini untuk mengunjungi tempat wisata terdekat di Surabaya seperti kawasan Kota Tua Surabaya. Agar rencana tersebut semakin mudah, manfaatkan saja layanan Salsa Wisata.</p>
                     </div>
 
                     <div class="grid-3">
                         <h5>Harga Tiket</h5>
-                        <p>Untuk harga tiket wisata Tugu Pahlawan sendiri tidak dipungut biaya. Namun, jika Anda ingin memasuki Museum Sepuluh Nopember Anda akan dikenakan biaya Rp 5.000 per orang.</p>
+                        <p>Retribusi	Tarif
+                            Tiket Masuk	Gratis<br>
+                            Parkir Motor	Rp3.000,00<br>
+                            Parkir Mobil	Rp5.000,00<br>
+                            Kopi di Tanamera	Mulai dari Rp35.000,00<br>
+                            Makanan di Tanamera	Mulai dari Rp70.000,00</p>
                     </div>
                 </div>
             </div>

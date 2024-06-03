@@ -78,7 +78,7 @@
                         <div class="card-content">
                             <h4>Kapal Selam</h4>
                             <p>Sebuah kapal selam yang telah dipensiunkan dan dijadikan museum. Kapal selam ini, KRI Pasopati 410, adalah bagian dari armada Angkatan Laut Indonesia.</p>
-                            <a href="" class="btn">Read More</a>
+                            <a href="../user/monkalsel.php" class="btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                             <p><strong>Sewa:</strong> Rp 500.000 / hari</p>
                             <p><strong>Harga:</strong> Rp 300.000 / tur</p>
                         </div>
-                        <button class="contact-button">Contact</button>
+                        <button class="contact-button">Hire me!</button>
                     </div>
                 </div>
                 <div class="tourguide-surabaya">
@@ -184,7 +184,7 @@
                             <p><strong>Sewa:</strong> Rp 800.000 / hari</p>
                             <p><strong>Harga:</strong> Rp 400.000 / tur</p>
                         </div>
-                        <button class="contact-button">Contact</button>
+                        <button class="contact-button">Hire me!</button>
                     </div>
                 </div>
                 <div class="tourguide-surabaya">
@@ -202,7 +202,7 @@
                             <p><strong>Sewa:</strong> Rp 300.000 / hari</p>
                             <p><strong>Harga:</strong> Rp 100.000 / tur</p>
                         </div>
-                        <button class="contact-button">Contact</button>
+                        <button class="contact-button">Hire me!</button>
                     </div>
                 </div>
             </div>
