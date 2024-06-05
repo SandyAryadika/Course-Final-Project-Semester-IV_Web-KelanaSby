@@ -216,15 +216,15 @@
                     <div class="contact-wrapper">
                         <div class="contact-form">
                             <h4>Send us a message</h4>
-                            <form>
+                            <form action="message.php" method="POST"> <!-- Update action to point to the PHP script -->
                                 <div class="form-group">
-                                    <input type="text" name="name" placeholder="Yuor Name">
+                                    <input type="text" name="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="name" placeholder="Yuor Email">
+                                    <input type="email" name="email" placeholder="Your Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" placeholder="Your Message"></textarea>
+                                    <textarea name="message" placeholder="Your Message" required></textarea>
                                 </div>
                                 <button type="submit">Send Message</button>
                             </form>
