@@ -34,9 +34,12 @@ if (isset($_POST['add_user'])) {
     // Generate a unique user ID
     $userId = generateUserId($koneksi);
 
+    // Hash the password before storing
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
     $sql = "INSERT INTO user (idUser, usernameUser, passwordUser, namaUser, emailUser, noUser) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = mysqli_prepare($koneksi, $sql);
-    mysqli_stmt_bind_param($stmt, 'ssssss', $userId, $username, $password, $name, $email, $phone);
+    mysqli_stmt_bind_param($stmt, 'ssssss', $userId, $username, $hashedPassword, $name, $email, $phone);
     mysqli_stmt_execute($stmt);
 
     // Redirect to the user list page
@@ -68,6 +71,4 @@ if (isset($_POST['add_user'])) {
         <button class="add-btn" type="submit" name="add_user">Add User</button>
     </form>
 </main>
-
-<!-- Add your footer here -->
 <?php include("adminFooter.php") ?>

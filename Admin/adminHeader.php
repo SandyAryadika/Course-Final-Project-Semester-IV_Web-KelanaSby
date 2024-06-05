@@ -22,17 +22,7 @@
             <li class="dropdown">
                 <a href="tourGuide.php" class="dropdown-toggle">Tour Guides</a>
             </li>
-            <li class="dropdown">
-                <a href="places.php" class="dropdown-toggle">Tourist Attractions</a>
-            </li>
-            <li><a href="#">Messages</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Account</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </li>
+            <li><a href="pesan_masuk.php">Messages</a></li>
             <li><a href="logout.php">Log Out</a></li>
         </ul>
     </aside>
