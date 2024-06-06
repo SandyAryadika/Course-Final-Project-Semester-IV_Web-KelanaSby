@@ -24,6 +24,15 @@
             <button class="signup"onclick="window.location.href='../user/loginRegist.php'">Sign Up</button>
             </div>
         </nav>
+
+        <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Simulate login process
+            localStorage.setItem('isLoggedIn', 'true');
+            window.location.href = 'index.html';
+        });
+    </script>
     </header>
 
     <main>
