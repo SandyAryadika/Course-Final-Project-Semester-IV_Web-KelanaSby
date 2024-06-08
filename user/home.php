@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,19 +24,20 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="auth-buttons">
-            <button class="login" onclick="window.location.href='../user/loginRegist.php'">Login</button>
-            <button class="signup"onclick="window.location.href='../user/loginRegist.php'">Sign Up</button>
+                <?php if (isset($_SESSION['logged_in'])):?>
+                    <button class="logout" onclick="window.location.href='../Admin/logout.php'">Logout</button>
+                    <style>
+                        .login, .signup {
+                            display: none;
+                        }
+                    </style>
+                <?php else:?>
+                    <button class="login" onclick="window.location.href='../user/loginRegist.php'">Login</button>
+                    <button class="signup" onclick="window.location.href='../user/loginRegist.php'">Sign Up</button>
+                <?php endif;?>
+            </div>
             </div>
         </nav>
-
-        <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Simulate login process
-            localStorage.setItem('isLoggedIn', 'true');
-            window.location.href = 'index.html';
-        });
-    </script>
     </header>
 
     <main>
@@ -175,7 +180,11 @@
                             <p><strong>Sewa:</strong> Rp 500.000 / hari</p>
                             <p><strong>Harga:</strong> Rp 300.000 / tur</p>
                         </div>
-                        <button class="contact-button">Hire me!</button>
+                        <?php if (isset($_SESSION['logged_in'])):?>
+                            <button class="contact-button" onclick="location.href='https://wa.me/082257011970'">Hire me!</button>
+                        <?php else: ?>
+                            <button class="contact-button" onclick="location.href='../user/loginRegist.php'">Hire me!</button>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="tourguide-surabaya">
@@ -193,7 +202,11 @@
                             <p><strong>Sewa:</strong> Rp 800.000 / hari</p>
                             <p><strong>Harga:</strong> Rp 400.000 / tur</p>
                         </div>
-                        <button class="contact-button">Hire me!</button>
+                        <?php if (isset($_SESSION['logged_in'])):?>
+                            <button class="contact-button" onclick="location.href='https://wa.me/082257011970'">Hire me!</button>
+                        <?php else: ?>
+                            <button class="contact-button" onclick="location.href='../user/loginRegist.php'">Hire me!</button>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="tourguide-surabaya">
@@ -211,7 +224,11 @@
                             <p><strong>Sewa:</strong> Rp 300.000 / hari</p>
                             <p><strong>Harga:</strong> Rp 100.000 / tur</p>
                         </div>
-                        <button class="contact-button">Hire me!</button>
+                        <?php if (isset($_SESSION['logged_in'])):?>
+                            <button class="contact-button" onclick="location.href='https://wa.me/082257011970'">Hire me!</button>
+                        <?php else: ?>
+                            <button class="contact-button" onclick="location.href='../user/loginRegist.php'">Hire me!</button>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = mysqli_real_escape_string($koneksi, $_POST['message']);
 
     $created_at = date('Y-m-d H:i:s');
-    $sql = "INSERT INTO contact (name, email, message, created_at) VALUES ('$name', '$email', '$message', '$created_at')";
+    $sql = "INSERT INTO messageuser (name, email, message, created_at) VALUES ('$name', '$email', '$message', '$created_at')";
 
 
     if (mysqli_query($koneksi, $sql)) {
