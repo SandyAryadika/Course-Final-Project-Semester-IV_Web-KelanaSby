@@ -105,6 +105,8 @@ h1.title{
 header {
     display: flex;
     align-items: center;
+
+
 }
 
 header input[type="search"] {
@@ -142,7 +144,7 @@ footer {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 16px;
     text-align: left;
 }
@@ -225,3 +227,10 @@ button {
 .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
+
+/* Tour Guide */
+/* table .addTourGuide{
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+} */

@@ -28,7 +28,6 @@
     </aside>
     <div class="main-content">
         <header>
-            <button id="sidebarToggle">Toggle Sidebar</button>
             <h1>Dashboard</h1>
         </header>
         <main>
