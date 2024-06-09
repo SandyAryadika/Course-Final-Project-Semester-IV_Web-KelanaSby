@@ -9,6 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <title>Form Login/Register</title>
 </head>
+
+<header>
+    <nav aria-label="Main Navigation">
+        <div class="logo">
+            <a href="../user/home.php">KelanaSby</a>
+        </div>
+    </nav>
+</header>
+
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
@@ -22,7 +31,19 @@
                 <input type="text" id="phone" name="phone" required placeholder="Phone" />
                 <button type="submit">Sign Up</button>
             </form>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // Simulate login process
+                localStorage.setItem('isLoggedIn', 'true');
+                window.location.href = '../user/home.php';
+            });
+        });
+    </script>
         </div>
+
         <div class="form-container sign-in-container">
             <form method="POST" action="../Admin/login.php">
                 <h1>Sign in</h1>
