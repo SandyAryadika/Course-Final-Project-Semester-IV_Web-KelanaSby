@@ -46,6 +46,7 @@ $total_users_result = mysqli_query($koneksi, $total_users_query);
 $total_users_row = mysqli_fetch_assoc($total_users_result);
 $total_users = $total_users_row['total'];
 
+
 // Calculate the total number of pages
 $total_pages = ceil($total_users / $users_per_page);
 
@@ -70,8 +71,8 @@ if (mysqli_num_rows($result) > 0) {
         $users[] = $row;
     }
 }
-
 mysqli_close($koneksi);
+
 ?>
 
 <?php include("adminHeader.php")?>

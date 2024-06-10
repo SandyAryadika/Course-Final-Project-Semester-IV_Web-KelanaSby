@@ -47,6 +47,7 @@ if (!empty($search_query)) {
 } else {
     $total_tourguides_query = "SELECT COUNT(*) as total FROM tourguide";
 }
+
 $total_tourguides_result = mysqli_query($koneksi, $total_tourguides_query);
 $total_tourguides_row = mysqli_fetch_assoc($total_tourguides_result);
 $total_tourguides = $total_tourguides_row['total'];
