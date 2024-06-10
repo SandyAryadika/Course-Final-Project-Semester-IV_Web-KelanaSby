@@ -92,7 +92,7 @@ mysqli_close($koneksi);
         <button type="submit">Search</button>
     </form>
     <table>
-        <thead>
+        <thead class="addTourGuide">
             <tr>
                 <th>ID</th>
                 <th>Name</th>

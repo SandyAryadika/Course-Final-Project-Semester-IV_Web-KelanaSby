@@ -41,9 +41,79 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <?php include("adminHeader.php")?>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center; 
+            color: #333;
+            font-weight: 600;
+        }
+
+        form.addTourGuide {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form.addTourGuide label {
+            margin-top: 15px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        form.addTourGuide input,
+        form.addTourGuide select,
+        form.addTourGuide button {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form.addTourGuide input[type="number"]::-webkit-outer-spin-button,
+        form.addTourGuide input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none; /* Remove number input arrows for Webkit */
+            margin: 0;
+        }
+
+        form.addTourGuide input[type="number"] {
+            -moz-appearance: textfield; /* Remove number input arrows for Firefox */
+            appearance: textfield; /* Standard property to remove number input arrows */
+        }
+
+        form.addTourGuide button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        form.addTourGuide button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 <main>
     <h1>Edit Tour Guide</h1>
-    <form method="POST" action="">
+    <form method="POST" action="" class="addTourGuide">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" value="<?= $tourguide['name'] ?>" required><br>
         
